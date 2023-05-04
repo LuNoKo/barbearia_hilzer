@@ -147,6 +147,7 @@ public class Barbearia {
                 if(maquina.size() == 0){
                     maquina.add(cliente);
                     System.out.println("O barbeiro "+ barbeiro.getIdBarbeiro() +" esta cobrando o Cliente " + cliente.getIdCliente() + " esta pagando");
+                    Thread.sleep(duracaoPagamento);
                     maquina.remove(cliente);
                 }
         }
